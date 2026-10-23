@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<main class="page-top container-fluid px-lg-5">
+  <h2 class="text-white">{{ title }}</h2>
+  <p class="text-white-50">{{ subtitle }}</p>
+  <div class="viz-wrap">
+    <tableau-viz id="tableauViz" src="{{ url }}" width="100%" height="{{ height }}"
+                 toolbar="bottom" hide-tabs device="desktop"></tableau-viz>
+  </div>
+</main>
+<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+{% endblock %}

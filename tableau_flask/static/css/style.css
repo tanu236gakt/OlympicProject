@@ -1,0 +1,18 @@
+:root { --teal:#0f6b57; --dark:#0b1f2a; --gold:#e8b923; }
+body { font-family: "Segoe UI", system-ui, sans-serif; background:#f5f7f8; }
+.text-gold { color: var(--gold) !important; }
+.navbar { background: rgba(11,31,42,.95); }
+.nav-link.active { color: var(--gold) !important; }
+.btn-gold { background: var(--gold); color:#1a1a1a; font-weight:600; border:0; }
+.btn-gold:hover { background:#f2c94c; }
+.badge-gold { background: var(--gold); color:#1a1a1a; letter-spacing:.08em; }
+.hero { min-height:100vh; padding-top:70px;
+  background: linear-gradient(rgba(11,31,42,.8), rgba(15,107,87,.75)), var(--dark); }
+/* Optional: add static/img/hero.jpg and put url("../img/hero.jpg") center/cover in the background above */
+.stats { background: var(--dark); }
+.stat-value { font-size:2rem; font-weight:700; color: var(--gold); }
+.feature, .insight { border:0; border-top:3px solid var(--gold); box-shadow:0 2px 10px rgba(0,0,0,.06); }
+.page-top { padding-top:100px; padding-bottom:40px; min-height:100vh;
+  background: linear-gradient(160deg, var(--dark), var(--teal)); }
+.viz-wrap { background:#fff; border-radius:8px; padding:8px; overflow-x:auto; }
+footer { background: var(--dark); }

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+<header id="home" class="hero d-flex align-items-center text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold text-white">Global Sports Performance<br><span class="text-gold">Analytics Dashboard</span></h1>
+    <p class="lead text-white-50 mx-auto col-lg-7">Explore Olympic data from 1992 to 2026: medal counts, athlete performance, regional efficiency and trends across nations and sports.</p>
+    <a href="{{ url_for('dashboard1') }}" class="btn btn-gold btn-lg mt-3">Explore Dashboards</a>
+  </div>
+</header>
+
+<section class="stats py-4">
+  <div class="container"><div class="row text-center g-3">
+    {% for value, label in kpis %}
+    <div class="col-6 col-md-3"><div class="stat-value">{{ value }}</div><div class="text-white-50 small">{{ label }}</div></div>
+    {% endfor %}
+  </div></div>
+</section>
+
+<section id="about" class="py-5 bg-white">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge badge-gold">ABOUT THE PROJECT</span>
+      <h2 class="mt-2">Olympic Games Performance Analytics</h2>
+      <p class="text-muted col-lg-7 mx-auto">An interactive Tableau analysis of medal achievements, athlete participation, sports investment and regional efficiency.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><div class="card feature h-100 p-3"><h5><i class="fa-solid fa-database text-primary"></i> Comprehensive Data</h5><p class="text-muted mb-0">Four joined datasets (athletes, medal results, games summary, all-time rankings) covering 1992 to 2026.</p></div></div>
+      <div class="col-md-4"><div class="card feature h-100 p-3"><h5><i class="fa-solid fa-earth-asia text-primary"></i> Global Coverage</h5><p class="text-muted mb-0">60 countries across seven regions, from Africa and Asia to Oceania and South America.</p></div></div>
+      <div class="col-md-4"><div class="card feature h-100 p-3"><h5><i class="fa-solid fa-medal text-primary"></i> Medal Intelligence</h5><p class="text-muted mb-0">Gold, silver and bronze trends, medal efficiency and the link between investment and results.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="insights" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="badge badge-gold">KEY FINDINGS</span>
+      <h2 class="mt-2">Data Insights</h2>
+    </div>
+    <div class="row g-4">
+      {% for icon, title, text in insights %}
+      <div class="col-md-6 col-lg-4"><div class="card insight h-100 p-3">
+        <h6><i class="fa-solid {{ icon }} text-primary me-2"></i>{{ title }}</h6>
+        <p class="small text-muted mb-0">{{ text }}</p>
+      </div></div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
