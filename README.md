@@ -9,7 +9,7 @@ Interactive Tableau dashboards and a data story on Olympic performance (1992 to 
 - Tableau Story: https://public.tableau.com/views/MyStory_17927444982990/OlympicPerformanceStory
 - Dashboard 1 (Global Sports Performance): https://public.tableau.com/views/MyStory_17927444982990/GlobalSportsPerformanceDashboard
 - Dashboard 2 (Regional Efficiency): https://public.tableau.com/views/MyStory_17927444982990/RegionalEfficiencyDashboard
-- Demo video: [paste your video link here]
+- Demo video: (https://drive.google.com/file/d/1IrWBZWPtjQQgNOCYDxU9Ow3eqH0xUJ4I/view?usp=sharing)
 
 ## What is in this project
 | Folder / file | Description |
@@ -19,7 +19,6 @@ Interactive Tableau dashboards and a data story on Olympic performance (1992 to 
 | `screenshots/` | Screenshots of the Tableau work and the website |
 | `Olympic_Project_Documentation.docx` | Step-by-step project documentation |
 | `Tableau_Build_Guide.md` | Tableau build instructions and calculated fields |
-| `Demo_Video_Script.md` | Script used for the demo video |
 
 ## Dataset
 The data is **simulated**. It was generated to match the structure described in the project brief and is not real Olympic data. Numbers in the dashboards are therefore illustrative.
